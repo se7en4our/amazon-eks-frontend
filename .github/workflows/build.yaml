@@ -60,7 +60,7 @@ jobs:
           repository: se7en4our/k8s-manifest-repo.git
           ref: main
           token: ${{ secrets.ACTION_TOKEN }}
-          path: k8s-manifest-repo.git
+          path: k8s-manifest-repo
 
       - name: Update Kubernetes resources
         run: |
