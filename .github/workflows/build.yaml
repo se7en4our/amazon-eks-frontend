@@ -57,10 +57,10 @@ jobs:
       - name: Checkout kustomize repository
         uses: actions/checkout@v2
         with:
-          repository: se7en4our/k8s-manifest-repo
+          repository: se7en4our/k8s-manifest-repo.git
           ref: main
           token: ${{ secrets.ACTION_TOKEN }}
-          path: k8s-manifest-repo
+          path: k8s-manifest-repo.git
 
       - name: Update Kubernetes resources
         run: |
